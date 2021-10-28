@@ -134,7 +134,7 @@ export default {
             let todo = this.getLocalStorageItem()
                 todo.forEach((item,index) => {
                     if (item.complete === true) {
-                        todo.splice(index, 100)
+                        todo.splice(index, Infinity)
                     }
                 })
 
